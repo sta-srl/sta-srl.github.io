@@ -17,12 +17,12 @@ title: S.T.A. Servizi Tecnici Avanzati s.r.l.
 piva: 03079520809
 pec: sta@pecditta.com
 email: sta.srl@outlook.it
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sos.sm" # the base hostname & protocol for your site, e.g. http://example.com
+description: >-
+  Offriamo servizi di recupero e rilancio di realtà industriali non più produttive, consulenze e progettazione di natura tecnico-informatica e mediazione nella compravendita di beni derivanti da liquidazioni e fallimenti.
+  Massima serietà e correttezza sono il nostro secondo nome, cerchiamo di venire incontro accontentando le esigenze dei nostri clienti.
+baseurl: ""
+url: "https://sos.sm"
+
 # Build settings
 
 markdown: kramdown
