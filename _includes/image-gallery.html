@@ -7,13 +7,33 @@
 
 <p class="image-gallery">
     <h2>Galleria immagini</h2>
-    {% for file in site.static_files %}
-        {% if file.path contains include.folder %}
-            {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}{% assign filenameparts = file.path | split: "/" %}{% assign filename = filenameparts | last | replace: file.extname,"" %}
-                <a href="{{ file.path }}" title="{{ filename }}">
-                    <img src="{{ site.url }}{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
-                </a>
-            {% endif %}
-        {% endif %}
-    {% endfor %}
+    <div class="container">
+        <div id="carousel" class="carousel">
+            {% assign i=1 %}
+            {% for file in site.static_files %}
+                {% if file.path contains include.folder %}
+                    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}{% assign filenameparts = file.path | split: "/" %}{% assign filename = filenameparts | last | replace: file.extname,"" %}
+                    <div class="item-{{ i }}">
+                        <figure class="image">
+                            <a href="{{ file.path }}" title="{{ filename }}">
+                                <img src="{{ site.url }}{{ file.path }}" alt="{{ filename }}" title="{{ filename }}" />
+                                </a>
+                        </figure>
+                    </div>    
+                    {% endif %}
+                {% endif %}
+                {% assign i=i + 1 %}
+            {% endfor %}
+
+        </div>
+    </div>
+    
 </p>
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+<script>
+bulmaCarousel.attach('#carousel', {
+	slidesToScroll: 1,
+	slidesToShow: 4
+});
+</script>

@@ -1,0 +1,22 @@
+{
+  "name": "sta-srl.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sta-srl/sta-srl.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sta-srl/sta-srl.github.io/issues"
+  },
+  "homepage": "https://github.com/sta-srl/sta-srl.github.io#readme",
+  "dependencies": {
+    "bulma-carousel": "^4.0.4"
+  }
+}
