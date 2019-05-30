@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% assign page.hero_image=page.image %}
-
 <div class="columns is-multiline">
 
     <div class="column is-6">
@@ -43,9 +41,9 @@ layout: default
 
     
     <div class="column is-12">
-        {% unless content.size > 0 %}
+        {% if content.size > 0 %}
         <p class="title is-4">Descrizione</p>
-        {% endunless %}
+        {% endif %}
         <div class="content">
             
 
