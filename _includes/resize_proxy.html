@@ -1,15 +1,5 @@
-{% if include.ratio == null %}
-    {% assign include.ratio = "square" %}
-{% endif %}
-{% if include.w == null %}
-    {% assign include.w = 300 %}
-{% endif %}
-{% if include.h == null %}
-    {% assign include.h = 300 %}
-{% endif %}
-
 {% if jekyll.environment == "development" %}
     {{ include.image }}
 {% else %}
-    https://images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ include.image }}&w={{ include.w }}&h={{ include.h }}&output=jpg&q=70&t={{ include.ratio }}
+    https://images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ include.image }}&w={{ include.w | default: 300 }}&h={{ include.h | default: 300 }}&output=jpg&q=70&t={{ include.ratio | default: "square" }}
 {% endif %}
