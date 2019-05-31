@@ -1,0 +1,5 @@
+{% if jekyll.environment == "development" %}
+    {{ include.image }}
+{% else %}
+    https://images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ include.image }}&w=300&h=300&output=jpg&q=70&t=square
+{% endif %}
