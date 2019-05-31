@@ -4,6 +4,11 @@
 
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
 
+.carousel-my-item figure {
+    margin-left: unset;
+    margin-right: unset;
+}
+
 .badge {
     position:relative;
 }

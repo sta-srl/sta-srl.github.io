@@ -7,12 +7,12 @@
                     {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
                         {% assign filenameparts = file.path | split: "/" %}
                         {% assign filename = filenameparts | last | replace: file.extname,"" %}
-                        <div class="item-{% increment i %}">
-                            <figure class="image is-square">
-                                <a href="{{ file.path }}" title="{{ filename }}">
+                        <div class="carousel-my-item item-{% increment i %}">
+                            <a href="{{ file.path }}" title="{{ filename }}">
+                                <figure class="image is-square  is-covered">
                                     <img src="{% include resize_proxy.html image=file.path %}" alt="{{ filename }}" title="{{ filename }}" />
-                                    </a>
-                            </figure>
+                                </figure>
+                            </a>
                         </div>    
                     {% endif %}
                 {% endif %}
