@@ -6,6 +6,7 @@ product_code: SMART-01
 layout: vendita
 image: "/assets/SMART-01/hero.jpg"
 price: € 3000
+venduto: true
 features:
     - label: Citycar
       icon: fa-location-arrow

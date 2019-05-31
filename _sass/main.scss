@@ -3,3 +3,19 @@
 @import "_main";
 
 @import "../node_modules/bulma-carousel/src/sass/index.sass";
+
+.badge {
+    position:relative;
+}
+.badge[data-badge]:after {
+    content: attr(data-badge);
+    position: absolute;
+    top: 50%;
+    font-size: 2em;
+    background: grey;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 0%;
+    box-shadow: 0 0 1px #333;
+}

@@ -1,11 +1,12 @@
 ---
 layout: default
+venduto: false
 ---
 
 <div class="columns is-multiline">
 
     <div class="column is-6">
-        <figure class="image is-4by3">
+        <figure class="image is-4by3 badge" {% if page.venduto %} data-badge="Venduto"{% endif %}>
             <img src="{{ page.image }}" />
         </figure>
     </div>
@@ -41,7 +42,7 @@ layout: default
 
     
     <div class="column is-12">
-        {% if content.size > 1 %}
+        {% if content.size > 5 %}
         <p class="title is-4">Descrizione</p>
         {% endif %}
         <div class="content">
