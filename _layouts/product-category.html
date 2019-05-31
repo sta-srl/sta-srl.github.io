@@ -21,7 +21,7 @@ show_sidebar: false
         {% if product.image %}
         <div class="card-image badge" {% if product.venduto %} data-badge="Venduto"{% endif %}>
           <figure class="image is-4by3">
-            <img src="{% include resize_proxy.html image=product.image %}" alt="{{ product.title }}" />
+            <img src="{% include resize_proxy.html image=product.image w=400 %}" alt="{{ product.title }}" />
           </figure>
         </div>
         {% endif %}

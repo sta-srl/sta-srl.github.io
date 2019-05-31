@@ -5,6 +5,9 @@ product_code: PANDA-01
 layout: vendita
 image: "/assets/PANDA-01/hero.jpg"
 price: € 3200
+features:
+    - label: gasolio
+      icon: fa-gas-pump
 ---
 
 + anno immatricolazione 2006;

@@ -8,6 +8,8 @@ image: "/assets/SMART-01/hero.jpg"
 price: € 3000
 venduto: true
 features:
+    - label: gasolio, euro 2
+      icon: fa-gas-pump
     - label: Citycar
       icon: fa-location-arrow
     - label: Perfetta in ogni sua parte
